@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.2">
+<persistence-unit name="RateMyDoctor">
+<jta-data-source>RateMyDoctorDS</jta-data-source>
+<class>com.coffeecode.ratemydoctor.models.Doctor</class>
+<class>com.coffeecode.ratemydoctor.models.Patient</class>
+<class>com.coffeecode.ratemydoctor.models.Review</class>
+    <properties>
+        <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+</persistence-unit>
+
+</persistence>
